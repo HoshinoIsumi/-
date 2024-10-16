@@ -131,7 +131,7 @@ class VirusInfo(Base):
     removal_instructions = Column(Text)
 
 # 创建数据库连接和表
-engine = create_engine('mysql+mysqlconnector://virus_user:isumi@localhost/virus_db')
+engine = create_engine('mysql+mysqlconnector://virus_user:isumi@localhost/virus_db')//更改为你的数据库信息
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 
